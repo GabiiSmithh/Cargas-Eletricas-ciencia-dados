@@ -39,12 +39,19 @@ python -m pip install --upgrade pip
 - Instale as dependências utilizadas no projeto:
 
 ```bash
-pip install pandas numpy pyarrow holidays openpyxl jupyter ipykernel matplotlib
+pip install pandas numpy pyarrow holidays openpyxl jupyter ipykernel matplotlib duckdb scipy statsmodels
 ```
 
 - Pressione `Ctrl + Shift + P`, pesquise `Python: Select Interpreter` e selecione o interpretador correspondente ao ambiente `.venv` (Python 3.13).
 
 - Ao abrir o notebook, selecione o kernel correspondente ao ambiente virtual criado.
+
+## Notebooks
+
+Execute na ordem abaixo:
+
+1. `notebooks/integracao.ipynb`: integra os dados do ONS, do INMET e do calendário e gera `dados/processados/ons_projeto_integrado.parquet`.
+2. `notebooks/analise_exploratoria.ipynb`: consultas SQL (DuckDB), análise exploratória, testes das hipóteses H1 (clima) e H2 (calendário) e implicações para a modelagem, com o recorte de 2021 a 2025.
 
 ## Observação
 

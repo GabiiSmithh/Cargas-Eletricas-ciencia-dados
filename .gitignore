@@ -4,3 +4,6 @@ dados/ONS/
 
 # Dados originais do INMET
 dados/INMET/
+
+# Ambiente virtual Python
+.venv/
